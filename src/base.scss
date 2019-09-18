@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.animated {
+  animation-duration: 0.2s;
+}
+
+.slideshow,
+.eg-slide {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  position: absolute;
+}
+
+.eg-slide {
+  padding: ($space * 12) ($space * 14);
+  background-color: $black;
+  font-family: "IBM Plex Serif", Helvetica, sans-serif;
+  color: $white;
+}
+
+.eg-slide-content {
+  height: 100%;
+}
+
+.visually-hidden {
+  /* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
